@@ -1,0 +1,15 @@
+{
+    "lenguas": ["Español", "Inglés", "Francés", "Alemán"],
+    "idiomas": ["Español", "Inglés", "Francés", "Alemán", "Italiano", "Portugués"],
+    "paises": ["España", "Francia", "Alemania", "Italia", "Portugal"],
+    "nivelesEstudios": ["Primaria", "Secundaria", "Bachillerato", "Universidad"],
+    "alergias": ["Polen", "Lácteos", "Frutos Secos", "Gluten"],
+    "profesiones": ["Ingeniero", "Médico", "Profesor", "Abogado", "Arquitecto"],
+    "ciudades": {
+        "España": ["Madrid", "Barcelona", "Valencia", "Sevilla"],
+        "Francia": ["París", "Lyon", "Marsella", "Toulouse"],
+        "Alemania": ["Berlín", "Múnich", "Hamburgo", "Colonia"],
+        "Italia": ["Roma", "Milán", "Nápoles", "Turín"],
+        "Portugal": ["Lisboa", "Oporto", "Coímbra", "Braga"]
+    }
+}

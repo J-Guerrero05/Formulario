@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Registro de Alumnos y Familiares</h1>
+    <form id="registroAlumno">
+        <fieldset>
+            <legend>Datos del Alumno</legend>
+            <label>Nombre: <input type="text" id="nombreAlumno" required></label>
+            <label>Apellidos: <input type="text" id="apellidosAlumno" required></label>
+            <label>NIF: <input type="text" id="nifAlumno" required pattern="^[0-9]{8}[A-Za-z]$"></label>
+            <label>Lengua Materna: <select id="lenguaMaterna"></select></label>
+            <label>Idiomas Conocidos: <select id="idiomasConocidos" multiple></select></label>
+        </fieldset>
+
+        <fieldset id="familiares">
+            <legend>Familiares Asociados</legend>
+            <button type="button" onclick="agregarFamiliar()">Agregar Familiar</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dirección Actual</legend>
+            <label>País: <select id="pais"></select></label>
+            <label>Población: <select id="ciudad"></select></label>
+            <label>Dirección Completa: <input type="text" id="direccionCompleta" required></label>
+            <label>Código Postal: <input type="text" id="codigoPostal" required pattern="^[0-9]{5}$"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Académicos</legend>
+            <label>Colegio de Procedencia: <input type="text" id="colegioProcedencia" required></label>
+            <label>Nivel de Estudios: <select id="nivelEstudios"></select></label>
+            <label>Idiomas Estudiados: <select id="idiomasEstudiados" multiple></select></label>
+            <label>Nivel de Estudio Solicitado: <select id="nivelEstudioSolicitado"></select></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información Médica</legend>
+            <label>Alergias: <select id="alergias" multiple></select></label>
+            <label>Medicación Actual: <input type="text" id="medicacionActual"></label>
+        </fieldset>
+
+        <button type="submit">Registrar Alumno</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
