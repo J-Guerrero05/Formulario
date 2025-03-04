@@ -69,13 +69,11 @@ function agregarFamiliar() {
         <label>Apellidos: <input type="text" required></label>
         <label>NIF: <input type="text" required pattern="^[0-9]{8}[A-Za-z]$"></label>
         <label>Profesión: <select id="profesionFamiliar"></select></label>
-        <label>Ciudad de Nacimiento: <select id="ciudadNacimientoFamiliar"></select></label>
         <label>Lengua Materna: <select id="lenguaMaternaFamiliar"></select></label>
         <label>Idiomas Conocidos: <select id="idiomasConocidosFamiliar" multiple></select></label>
     `;
     contenedor.appendChild(div);
     cargarSelect("profesionFamiliar", window.jsonData.profesiones || []);
-    cargarSelect("ciudadNacimientoFamiliar", window.jsonData.ciudades[document.getElementById("pais").value] || []);
     cargarSelect("lenguaMaternaFamiliar", window.jsonData.lenguas || []);
     cargarSelect("idiomasConocidosFamiliar", window.jsonData.idiomas || [], true);
 }
